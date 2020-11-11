@@ -1,9 +1,15 @@
+import React from 'react';
 import './App.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Navbar from "./components/Navbar/Navbar";
+import TourList from "./components/TourList";
 
 function App() {
   return (
-    <h1><i className="fas fa-home fa-7x" />test</h1>
+      <React.Fragment>
+          <Navbar />
+          <TourList />
+      </React.Fragment>
   );
 }
 
